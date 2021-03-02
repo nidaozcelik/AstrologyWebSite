@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 960px;
+        }
+        .newStyle1 {
+            background-image: url('/resimler/0.jpg');
+        }
+        .newStyle2 {
+            background-image: url('/resimler/0.jpg');
+        }
+        .newStyle3 {
+            background-image: url('/resimler/0.jpg');
+        }
+        .newStyle4 {
+            background-image: url('/resimler/0.jpeg');
+        }
+        .auto-style2 {
+            color: #FFFFFF;
+            font-size: 10pt;
+        }
+        .newStyle5 {
+            font-family: "Lithos Pro Regular";
+        }
+    </style>
+</head>
+<body class="newStyle4">
+    <form id="form1" runat="server">
+    <div>
+    </div>
+</body>
+</html>
+
+
+
+    <table align="center" cellpadding="5" class="auto-style1">
+        <tr>
+            <td colspan="2" class="auto-style2">
+                <asp:Label ID="Label1" runat="server" CssClass="newStyle5" style="font-size: 45pt" Text="ASTROLOJİ REHBERİM 2015"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ImageMap ID="ImageMap1" runat="server" ImageUrl="~/resimler/burc1.gif" Width="175px">
+                    <asp:CircleHotSpot NavigateUrl="~/koc.aspx" Radius="25" X="75" Y="30" />
+                    <asp:CircleHotSpot NavigateUrl="~/boga.aspx" Radius="25" X="75" Y="80" />
+                    <asp:CircleHotSpot NavigateUrl="~/ikizler.aspx" Radius="25" X="75" Y="130" />
+                    <asp:CircleHotSpot NavigateUrl="~/yengec.aspx" Radius="25" X="75" Y="180" />
+                    <asp:CircleHotSpot NavigateUrl="~/aslan.aspx" Radius="25" X="75" Y="230" />
+                    <asp:CircleHotSpot NavigateUrl="~/basak.aspx" Radius="25" X="75" Y="280" />
+                    <asp:CircleHotSpot NavigateUrl="~/terazi.aspx" Radius="25" X="75" Y="330" />
+                    <asp:CircleHotSpot NavigateUrl="~/default.aspx" Radius="25" X="75" Y="380" />
+                    <asp:CircleHotSpot NavigateUrl="~/yay.aspx" Radius="25" X="75" Y="430" />
+                    <asp:CircleHotSpot NavigateUrl="~/oglak.aspx" Radius="25" X="75" Y="510" />
+                    <asp:CircleHotSpot NavigateUrl="~/kova.aspx" Radius="25" X="75" Y="550" />
+                    <asp:CircleHotSpot NavigateUrl="~/balik.aspx" Radius="25" X="75" Y="610" />
+                </asp:ImageMap>
+            </td>
+            <td>
+
+
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+        </tr>
+    </table>
+  
+    </form>
